@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './componets/template/header/header.component';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { FooterComponent } from './componets/template/footer/footer.component';
 
 const MaterialModules = [
   MatToolbarModule
@@ -15,7 +16,8 @@ const MaterialModules = [
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     MaterialModules,

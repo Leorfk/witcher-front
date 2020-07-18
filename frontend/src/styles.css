@@ -2,3 +2,19 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.blue-icon {
+  color: rgb(0, 132, 255);
+}
+
+.center {
+  vertical-align: middle;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-negrito {
+  font-weight: bold;
+}
