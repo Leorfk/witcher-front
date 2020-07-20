@@ -6,11 +6,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
-import { MatCardModule} from '@angular/material/card'
+import { MatCardModule} from '@angular/material/card';
 import { HeaderComponent } from './componets/template/header/header.component';
 import { FooterComponent } from './componets/template/footer/footer.component';
 import { NavComponent } from './componets/template/nav/nav.component';
 import { HomeComponent } from './views/home/home.component';
+import { CharacterCrudComponent } from './views/character-crud/character-crud.component';
 
 const MaterialModules = [
   MatToolbarModule,
@@ -26,7 +27,8 @@ const MyComponents = [
 ];
 
 const PageComponents = [
-  HomeComponent
+  HomeComponent,
+  CharacterCrudComponent
 ];
 
 @NgModule({
