@@ -13,34 +13,36 @@ import { NavComponent } from './componets/template/nav/nav.component';
 import { HomeComponent } from './views/home/home.component';
 import { CharacterCrudComponent } from './views/character-crud/character-crud.component';
 import { NotFoundComponent } from './views/not-found/not-found.component';
+import { CharacterCreateComponent } from './views/character-crud/character-create/character-create.component';
 
-const MaterialModules = [
+const Material = [
   MatToolbarModule,
   MatSidenavModule,
   MatListModule,
   MatCardModule
 ];
 
-const MyComponents = [
+const Components = [
   HeaderComponent,
   FooterComponent,
   NavComponent
 ];
 
-const PageComponents = [
+const Pages = [
   HomeComponent,
-  CharacterCrudComponent
+  CharacterCrudComponent,
+  CharacterCreateComponent,
+  NotFoundComponent
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    MyComponents,
-    PageComponents,
-    NotFoundComponent
+    Components,
+    Pages
   ],
   imports: [
-    MaterialModules,
+    Material,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
