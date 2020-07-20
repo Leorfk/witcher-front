@@ -12,6 +12,7 @@ import { FooterComponent } from './componets/template/footer/footer.component';
 import { NavComponent } from './componets/template/nav/nav.component';
 import { HomeComponent } from './views/home/home.component';
 import { CharacterCrudComponent } from './views/character-crud/character-crud.component';
+import { NotFoundComponent } from './views/not-found/not-found.component';
 
 const MaterialModules = [
   MatToolbarModule,
@@ -35,7 +36,8 @@ const PageComponents = [
   declarations: [
     AppComponent,
     MyComponents,
-    PageComponents
+    PageComponents,
+    NotFoundComponent
   ],
   imports: [
     MaterialModules,
