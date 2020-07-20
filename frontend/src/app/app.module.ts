@@ -1,29 +1,44 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HeaderComponent } from './componets/template/header/header.component';
-
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import { HeaderComponent } from './componets/template/header/header.component';
 import { FooterComponent } from './componets/template/footer/footer.component';
+import { NavComponent } from './componets/template/nav/nav.component';
+import { HomeComponent } from './views/home/home.component';
 
 const MaterialModules = [
-  MatToolbarModule
+  MatToolbarModule,
+  MatSidenavModule,
+  MatListModule
+];
+
+const MyComponents = [
+  HeaderComponent,
+  FooterComponent,
+  NavComponent
+];
+
+const PageComponents = [
+  HomeComponent
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    FooterComponent
+    MyComponents,
+    PageComponents
   ],
   imports: [
     MaterialModules,
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

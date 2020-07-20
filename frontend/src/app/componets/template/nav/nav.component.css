@@ -1,0 +1,19 @@
+.sidenav {
+  background-color: rgb(14, 14, 14);
+  width: 200px;
+  /* opacity: 0.6;
+  background-image: url('/assets/img/menu-image.jpg'); */
+}
+
+.sidenav a {
+  color: rgb(255, 145, 0);
+}
+
+.sidenav a:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(109, 4, 4);
+}
+
+.sidenav i {
+  padding-right: 10px;
+}
