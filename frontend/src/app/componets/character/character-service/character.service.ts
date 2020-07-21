@@ -28,4 +28,8 @@ export class CharacterService {
   create(character: Character): Observable<Character>{
     return this.http.post<Character>(this.baseUrl, character);
   }
+
+  getAll(): Observable<Character[]> {
+    return this.http.get<Character[]>(this.baseUrl);
+  }
 }

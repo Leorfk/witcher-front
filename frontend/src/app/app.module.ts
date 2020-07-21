@@ -13,6 +13,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 import { HeaderComponent } from './componets/template/header/header.component';
 import { FooterComponent } from './componets/template/footer/footer.component';
@@ -20,7 +22,9 @@ import { NavComponent } from './componets/template/nav/nav.component';
 import { HomeComponent } from './views/home/home.component';
 import { CharacterCrudComponent } from './views/character-crud/character-crud.component';
 import { NotFoundComponent } from './views/not-found/not-found.component';
-import { CharacterCreateComponent } from './views/character-crud/character-create/character-create.component';
+import { CharacterCreateComponent } from './componets/character/character-create/character-create.component';
+import { CharacterViewComponent } from './componets/character/character-view/character-view.component';
+
 
 const Material = [
   MatToolbarModule,
@@ -30,7 +34,9 @@ const Material = [
   MatButtonModule,
   MatSnackBarModule,
   MatFormFieldModule,
-  MatInputModule
+  MatInputModule,
+  MatTableModule,
+  MatPaginatorModule
 ];
 
 const Components = [
@@ -43,6 +49,7 @@ const Pages = [
   HomeComponent,
   CharacterCrudComponent,
   CharacterCreateComponent,
+  CharacterViewComponent,
   NotFoundComponent
 ];
 

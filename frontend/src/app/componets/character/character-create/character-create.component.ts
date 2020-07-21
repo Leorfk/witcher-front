@@ -1,6 +1,6 @@
-import { Character } from './../../../componets/character/character.model';
+import { Character } from '../character.model';
 import { Router } from '@angular/router';
-import { CharacterService } from './../../../componets/character/character-service/character.service';
+import { CharacterService } from '../character-service/character.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
