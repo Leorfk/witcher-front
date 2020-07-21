@@ -13,7 +13,7 @@ import { MatSort } from '@angular/material/sort';
 export class CharacterViewComponent implements OnInit {
 
   characters: Character[];
-  displayedColumns = ['name'];
+  displayedColumns = ['name', 'age', 'aliases', 'action'];
   constructor(private characterService: CharacterService) { }
 
   buildTable(): void {

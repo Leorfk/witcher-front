@@ -5,31 +5,34 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import { Observable } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class CharacterService {
-
   baseUrl = ' http://localhost:3001/characters';
 
-  constructor(
-    private snack: MatSnackBar,
-    private http: HttpClient
-    ) { }
+  constructor(private snack: MatSnackBar, private http: HttpClient) {}
 
-
-  showMessage(msg: string): void{
+  showMessage(msg: string): void {
     this.snack.open(msg, 'close', {
       duration: 4000,
       horizontalPosition: 'center',
-      verticalPosition: 'top'
+      verticalPosition: 'top',
     });
   }
 
-  create(character: Character): Observable<Character>{
+  create(character: Character): Observable<Character> {
     return this.http.post<Character>(this.baseUrl, character);
   }
 
   getAll(): Observable<Character[]> {
     return this.http.get<Character[]>(this.baseUrl);
+  }
+
+  getById(id: string): Observable<Character> {
+    return this.http.get<Character>(`${this.baseUrl}/${id}`);
+  }
+
+  update(character: Character): Observable<Character> {
+    return this.http.put<Character>(this.baseUrl, character);
   }
 }
