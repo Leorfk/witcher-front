@@ -1,12 +1,20 @@
+import { Character } from './../character.model';
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CharacterService {
 
-  constructor(private snack: MatSnackBar) { }
+  baseUrl = ' http://localhost:3001/characters';
+
+  constructor(
+    private snack: MatSnackBar,
+    private http: HttpClient
+    ) { }
 
 
   showMessage(msg: string): void{
@@ -15,5 +23,9 @@ export class CharacterService {
       horizontalPosition: 'center',
       verticalPosition: 'top'
     });
+  }
+
+  create(character: Character): Observable<Character>{
+    return this.http.post<Character>(this.baseUrl, character);
   }
 }
