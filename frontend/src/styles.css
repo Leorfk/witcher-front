@@ -26,3 +26,13 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   color: rgb(0, 132, 255);
   text-decoration: none;
 }
+
+.msg-success {
+  background-color: #007e00;
+  color: wheat;
+}
+
+.msg-error {
+  background-color: rgb(177, 2, 2);
+  color: wheat;
+}

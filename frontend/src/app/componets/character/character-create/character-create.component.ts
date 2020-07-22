@@ -31,7 +31,6 @@ export class CharacterCreateComponent implements OnInit {
   }
 
   back(): void {
-    this.characterService.showMessage('Arregou!!!');
     this.router.navigate(['/characters']);
   }
 
