@@ -24,6 +24,9 @@ import { CharacterCrudComponent } from './views/character-crud/character-crud.co
 import { NotFoundComponent } from './views/not-found/not-found.component';
 import { CharacterCreateComponent } from './componets/character/character-create/character-create.component';
 import { CharacterViewComponent } from './componets/character/character-view/character-view.component';
+import { CharacterUpdateComponent } from './componets/character/character-update/character-update.component';
+import { CharacterDeleteComponent } from './componets/character/character-delete/character-delete.component';
+import { CharacterDetailsComponent } from './componets/character/character-details/character-details.component';
 
 
 const Material = [
@@ -50,6 +53,9 @@ const Pages = [
   CharacterCrudComponent,
   CharacterCreateComponent,
   CharacterViewComponent,
+  CharacterUpdateComponent,
+  CharacterDeleteComponent,
+  CharacterDetailsComponent,
   NotFoundComponent
 ];
 

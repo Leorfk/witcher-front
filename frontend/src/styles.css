@@ -17,4 +17,12 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .text-negrito {
   font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.text-negrito:hover {
+  font-weight: 300;
+  color: rgb(0, 132, 255);
+  text-decoration: none;
 }

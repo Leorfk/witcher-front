@@ -33,6 +33,13 @@ export class CharacterService {
   }
 
   update(character: Character): Observable<Character> {
-    return this.http.put<Character>(this.baseUrl, character);
+    return this.http.put<Character>(
+      `${this.baseUrl}/${character.id}`,
+      character
+    );
+  }
+
+  delete(character: Character): Observable<Character> {
+    return this.http.delete<Character>(`${this.baseUrl}/${character.id}`);
   }
 }
