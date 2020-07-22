@@ -1,3 +1,4 @@
+import { HeaderService } from './../../template/header/header-service/header.service';
 import { Character } from './../character.model';
 import { CharacterService } from './../character-service/character.service';
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -14,7 +15,15 @@ export class CharacterViewComponent implements OnInit {
 
   characters: Character[];
   displayedColumns = ['name', 'age', 'aliases', 'action'];
-  constructor(private characterService: CharacterService) { }
+  constructor(
+    private headerService: HeaderService,
+    private characterService: CharacterService) {
+      headerService.headerData = {
+        title: 'Characters',
+        icon: 'person',
+        routeUrl: '/characters'
+      };
+    }
 
   buildTable(): void {
   }
