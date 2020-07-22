@@ -1,1 +1,13 @@
-<p>character-delete works!</p>
+<mat-card>
+  <mat-card-title>Update Character</mat-card-title>
+  <form class="form-style">
+    <mat-form-field>
+      <input matInput placeholder="Name" [(ngModel)]="character.name" name="name" disabled/>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Age" [(ngModel)]="character.age" name="age" disabled/>
+    </mat-form-field>
+  </form>
+  <button class="form-button" mat-raised-button color="warn" (click)="delete()">Delete</button>
+  <button class="form-button" mat-raised-button color="primary" (click)="cancel()">Return</button>
+</mat-card>
