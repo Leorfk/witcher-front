@@ -27,6 +27,7 @@ import { CharacterViewComponent } from './componets/character/character-view/cha
 import { CharacterUpdateComponent } from './componets/character/character-update/character-update.component';
 import { CharacterDeleteComponent } from './componets/character/character-delete/character-delete.component';
 import { CharacterDetailsComponent } from './componets/character/character-details/character-details.component';
+import { TableComponent } from './componets/util/table/table.component';
 
 
 const Material = [
@@ -63,7 +64,8 @@ const Pages = [
   declarations: [
     AppComponent,
     Components,
-    Pages
+    Pages,
+    TableComponent
   ],
   imports: [
     Material,

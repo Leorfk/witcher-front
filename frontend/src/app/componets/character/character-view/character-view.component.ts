@@ -9,27 +9,43 @@ import { MatSort } from '@angular/material/sort';
 @Component({
   selector: 'app-character-view',
   templateUrl: './character-view.component.html',
-  styleUrls: ['./character-view.component.css']
+  styleUrls: ['./character-view.component.css'],
 })
 export class CharacterViewComponent implements OnInit {
-
   characters: Character[];
-  displayedColumns = ['name', 'age', 'aliases', 'action'];
+  displayedColumns = ['action', 'name', 'age', 'profession'];
+  routes = [
+    {
+      link: '/characters/details/',
+      class: 'material-icons view',
+      icon: 'person',
+    },
+    {
+      link: '/characters/edit/',
+      class: 'material-icons edit',
+      icon: 'edit',
+    },
+    {
+      link: '/characters/delete/',
+      class: 'material-icons delete',
+      icon: 'delete',
+    },
+  ];
   constructor(
     private headerService: HeaderService,
-    private characterService: CharacterService) {
-      headerService.headerData = {
-        title: 'Characters',
-        icon: 'person',
-        routeUrl: '/characters'
-      };
-    }
-
-  buildTable(): void {
+    private characterService: CharacterService
+  ) {
+    headerService.headerData = {
+      title: 'Characters',
+      icon: 'person',
+      routeUrl: '/characters',
+    };
   }
 
+  buildTable(): void {}
+
   ngOnInit(): void {
-    this.characterService.getAll().subscribe(x => {
+    this.characterService.getAll().subscribe((x) => {
       this.characters = x;
     });
   }
