@@ -1,3 +1,4 @@
+import { TableConfig } from './../../util/table/table-config.model';
 import { HeaderService } from './../../template/header/header-service/header.service';
 import { Character } from './../character.model';
 import { CharacterService } from './../character-service/character.service';
@@ -13,7 +14,10 @@ import { MatSort } from '@angular/material/sort';
 })
 export class CharacterViewComponent implements OnInit {
   characters: Character[];
-  displayedColumns = ['action', 'name', 'age', 'profession'];
+  displayedColumns: TableConfig = {
+    columns: ['name', 'age', 'profession', 'action'],
+    columnsName: ['Name', 'Age', 'Profession', 'Action'],
+  };
   routes = [
     {
       link: '/characters/details/',

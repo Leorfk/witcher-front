@@ -1,4 +1,4 @@
-import { Character } from './../../character/character.model';
+import { TableConfig } from './table-config.model';
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
@@ -8,15 +8,14 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class TableComponent implements OnInit {
   @Input()
-  characters: Character[];
+  dataSource: any[];
   @Input()
-  displayedColumns: string[];
+  displayedColumns: TableConfig;
   @Input()
   routes: any[];
 
   constructor() {}
 
   ngOnInit(): void {
-    console.log(this.routes);
   }
 }

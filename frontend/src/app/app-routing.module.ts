@@ -11,6 +11,10 @@ import { CharacterDetailsComponent } from './componets/character/character-detai
 
 const routes: Routes = [
   {
+    path: '',
+    component: HomeComponent
+  },
+  {
     path: 'home',
     component: HomeComponent
   },

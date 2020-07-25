@@ -1,12 +1,13 @@
-<mat-table mat-table class="mat-elevation-z8" [dataSource]="characters">
+<mat-table mat-table class="mat-elevation-z8" [dataSource]="dataSource">
 
-  <ng-container *ngFor="let item of displayedColumns | slice: 1; let i = index" matColumnDef="{{ item }}">
-    <mat-header-cell *matHeaderCellDef> {{ displayedColumns[i] }} </mat-header-cell>
+  <ng-container *ngFor="let item of displayedColumns.columns |
+      slice:0:displayedColumns.columns.length-1; let i = index" matColumnDef="{{ item }}">
+    <mat-header-cell *matHeaderCellDef> {{ displayedColumns.columnsName[i+1] }} </mat-header-cell>
     <mat-cell *matCellDef="let row"> {{ row[item] }} </mat-cell>
   </ng-container>
 
-  <ng-container matColumnDef="action">
-    <mat-header-cell mat-header-cell *matHeaderCellDef>Actions</mat-header-cell>
+  <ng-container matColumnDef="{{ displayedColumns.columns[displayedColumns.columns.length-1] }}">
+    <mat-header-cell mat-header-cell *matHeaderCellDef>{{ displayedColumns.columnsName[displayedColumns.columnsName.length-1] }}s</mat-header-cell>
     <mat-cell mat-cell *matCellDef="let row">
       <a *ngFor="let item of routes" routerLink="{{ item.link }}{{ row.id }}">
         <i class="{{ item.class }}">{{ item.icon }}</i>
@@ -14,6 +15,6 @@
     </mat-cell>
   </ng-container>
 
-  <mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></mat-header-row>
-  <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  <mat-header-row *matHeaderRowDef="displayedColumns.columns; sticky: true"></mat-header-row>
+  <mat-row *matRowDef="let row; columns: displayedColumns.columns;"></mat-row>
 </mat-table>
