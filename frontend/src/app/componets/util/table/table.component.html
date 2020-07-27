@@ -13,9 +13,15 @@
         <mat-header-cell mat-header-cell *matHeaderCellDef>
           {{ displayedColumns.columnsName[i] }}</mat-header-cell>
         <mat-cell mat-cell *matCellDef="let row">
-          <a *ngFor="let item of routes" routerLink="{{ item.link }}{{ row.id }}">
-            <i class="{{ item.class }}">{{ item.icon }}</i>
-          </a>
+          <mat-select>
+            <mat-option>Close</mat-option>
+            <mat-option *ngFor="let item of routes">
+              <a class="link-list" routerLink="{{ item.link }}{{ row.id }}">
+                <i class="material-icons {{ item.class }}">{{ item.icon }}</i>
+                {{item.description}}
+              </a>
+            </mat-option>
+          </mat-select>
         </mat-cell>
       </ng-container>
     </ng-template>

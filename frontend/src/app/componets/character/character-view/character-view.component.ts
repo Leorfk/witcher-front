@@ -21,18 +21,21 @@ export class CharacterViewComponent implements OnInit {
 
   routes = [
     {
+      description: 'Details',
       link: '/characters/details/',
-      class: 'material-icons view',
+      class: 'center view',
       icon: 'person',
     },
     {
+      description: 'Edit',
       link: '/characters/edit/',
-      class: 'material-icons edit',
+      class: 'center edit',
       icon: 'edit',
     },
     {
+      description: 'Delete',
       link: '/characters/delete/',
-      class: 'material-icons delete',
+      class: 'center delete',
       icon: 'delete',
     },
   ];

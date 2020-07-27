@@ -15,6 +15,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import {MatSelectModule} from '@angular/material/select';
 
 import { HeaderComponent } from './componets/template/header/header.component';
 import { FooterComponent } from './componets/template/footer/footer.component';
@@ -42,7 +43,8 @@ const Material = [
   MatFormFieldModule,
   MatInputModule,
   MatTableModule,
-  MatPaginatorModule
+  MatPaginatorModule,
+  MatSelectModule
 ];
 
 const Components = [
