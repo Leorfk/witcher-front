@@ -23,7 +23,6 @@ export class CharacterService {
   }
 
   errorHandler(e: any): Observable<any> {
-    console.log(e);
     this.showMessage(e.message, true);
     return EMPTY;
   }

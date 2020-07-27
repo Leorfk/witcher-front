@@ -15,9 +15,10 @@ import { MatSort } from '@angular/material/sort';
 export class CharacterViewComponent implements OnInit {
   characters: Character[];
   displayedColumns: TableConfig = {
-    columns: ['name', 'age', 'profession', 'action'],
-    columnsName: ['Name', 'Age', 'Profession', 'Action'],
+    columns: ['name', 'aliases', 'age', 'hairColor', 'eyeColor', 'skin', 'gender', 'profession', 'action'],
+    columnsName: ['Name', 'Aliases', 'Age', 'Hair Color', 'Eye Color', 'Skin', 'Gender', 'Profession', 'Action'],
   };
+
   routes = [
     {
       link: '/characters/details/',

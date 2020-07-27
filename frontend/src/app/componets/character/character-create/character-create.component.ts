@@ -30,7 +30,7 @@ export class CharacterCreateComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  back(): void {
+  goback(): void {
     this.router.navigate(['/characters']);
   }
 
