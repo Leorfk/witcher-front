@@ -1,0 +1,20 @@
+<div>
+  <p>
+    <label class="btn" for="modal-1">show Table</label>
+  </p>
+</div>
+
+
+<input class="modal-state" id="modal-1" type="checkbox" />
+<div class="modal">
+  <label class="modal__bg" for="modal-1"></label>
+  <div class="modal__inner">
+    <label class="modal__close" for="modal-1"></label>
+    <!-- My content -->
+    <mat-card>
+      <mat-card-title>Detail</mat-card-title>
+    </mat-card>
+    <app-table [dataSource]="dataSource" [displayedColumns]="displayedColumns" [routes]="routes"></app-table>
+    <!-- My content -->
+  </div>
+</div>
