@@ -1,9 +1,4 @@
-<div>
-  <p>
-    <label class="btn" for="modal-1">show Table</label>
-  </p>
-</div>
-
+<label class="btn box" for="modal-1">show Table</label>
 
 <input class="modal-state" id="modal-1" type="checkbox" />
 <div class="modal">
@@ -14,7 +9,11 @@
     <mat-card>
       <mat-card-title>Detail</mat-card-title>
     </mat-card>
-    <app-table [dataSource]="dataSource" [displayedColumns]="displayedColumns" [routes]="routes"></app-table>
+    <app-table
+      [dataSource]="dataSource"
+      [displayedColumns]="displayedColumns"
+      [routes]="routes"
+    ></app-table>
     <!-- My content -->
   </div>
 </div>

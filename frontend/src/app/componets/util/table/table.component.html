@@ -4,7 +4,7 @@
     <div *ngIf="!action;else lastItem">
       <ng-container matColumnDef="{{ item }}">
         <mat-header-cell *matHeaderCellDef> {{ displayedColumns.columnsName[i] }} </mat-header-cell>
-        <mat-cell *matCellDef="let row"> {{ row[item] }} </mat-cell>
+        <mat-cell *matCellDef="let row" (click)="toma(row)" > {{ row[item] }}</mat-cell>
       </ng-container>
     </div>
 
