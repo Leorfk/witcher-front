@@ -35,6 +35,7 @@ export class CharacterCreateComponent implements OnInit {
   }
 
   create(): void {
+    console.log(this.character);
     this.characterService.create(this.character).subscribe(x => {
       this.characterService.showMessage(`The ${x.name} has been add to game`);
       this.router.navigate(['/characters']);

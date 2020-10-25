@@ -31,7 +31,6 @@ import { CharacterDetailsComponent } from './componets/character/character-detai
 import { TableComponent } from './componets/util/table/table.component';
 import { FormComponent } from './componets/util/form/form.component';
 import { SimpleInputComponent } from './componets/util/simple-input/simple-input.component';
-import { TableTestComponent } from './componets/util/table-test/table-test.component';
 
 
 const Material = [
@@ -54,8 +53,7 @@ const Components = [
   NavComponent,
   TableComponent,
   FormComponent,
-  SimpleInputComponent,
-  TableTestComponent
+  SimpleInputComponent
 ];
 
 const Pages = [

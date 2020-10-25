@@ -1,109 +1,38 @@
 {
-  "products": [
+  "characters": [
     {
-      "id": 1,
-      "name": "Weed",
-      "price": 15
-    },
-    {
-      "id": 1,
-      "name": "kunk",
-      "price": 15
-    },
-    {
-      "name": "Candy",
-      "price": 1500,
-      "id": 2
-    },
-    {
-      "name": "Candy",
-      "price": 1500,
-      "id": 3
-    },
-    {
-      "name": "Candy",
-      "price": 1500,
-      "id": 4
-    },
-    {
-      "name": "Candy",
-      "price": 1500,
-      "id": 5
-    },
-    {
-      "name": "Candy",
-      "price": 1500,
-      "id": 6
-    },
-    {
-      "name": "Candy",
-      "price": 1500,
-      "id": 7
-    },
-    {
-      "name": "Candy",
-      "price": 1500,
+      "name": "Gearlt",
+      "age": 123,
+      "abilities": [
+        "Igni"
+      ],
+      "affiliation": [
+        "Novgrad"
+      ],
+      "aliases": "Vesemir",
+      "eyeColor": "Brown",
+      "hairColor": "branco",
+      "gender": "Male",
+      "profession": "Witcher",
+      "skin": "White",
       "id": 8
     },
     {
-      "name": "Candy",
-      "price": 1500,
+      "name": "Gearlt",
+      "age": 123,
+      "abilities": [
+        "Igni"
+      ],
+      "affiliation": [
+        "Novgrad"
+      ],
+      "aliases": "Vesemir",
+      "eyeColor": "Brown",
+      "hairColor": "none",
+      "gender": "Male",
+      "profession": "Witcher",
+      "skin": "White",
       "id": 9
-    },
-    {
-      "name": "Candy",
-      "price": 1500,
-      "id": 10
-    },
-    {
-      "name": "Candy",
-      "price": 1500,
-      "id": 11
-    },
-    {
-      "name": "Candy",
-      "price": 1500,
-      "id": 12
-    },
-    {
-      "name": "Candy",
-      "price": 1500,
-      "id": 13
-    },
-    {
-      "name": "Candy",
-      "price": 1500,
-      "id": 14
-    },
-    {
-      "name": "Candy",
-      "price": 1500,
-      "id": 15
-    },
-    {
-      "name": "Candy",
-      "price": 1500,
-      "id": 16
-    },
-    {
-      "name": "Candy",
-      "price": 1500,
-      "id": 17
-    },
-    {
-      "name": "Candy",
-      "price": 1500,
-      "id": 18
-    },
-    {
-      "name": "Candy",
-      "price": 1500,
-      "id": 19
-    },
-    {
-      "name": "Candy",
-      "price": 1500,
-      "id": 20
     }
   ]
 }

@@ -1,11 +1,29 @@
 <mat-card>
   <mat-card-title>Create New Character</mat-card-title>
   <form class="form-style">
-    <mat-form-field>
+    <mat-form-field class="input-group input-item">
       <input matInput placeholder="Name" [(ngModel)]="character.name" name="name"/>
     </mat-form-field>
-    <mat-form-field>
+    <mat-form-field class="input-group input-item">
       <input matInput placeholder="Age" [(ngModel)]="character.age" name="age"/>
+    </mat-form-field>
+    <mat-form-field class="input-group input-item">
+      <input matInput placeholder="Aliases" [(ngModel)]="character.aliases" name="aliases"/>
+    </mat-form-field>
+    <mat-form-field class="input-group input-item">
+      <input matInput placeholder="Hair Color" [(ngModel)]="character.hairColor" name="hairColor"/>
+    </mat-form-field>
+    <mat-form-field class="input-group input-item">
+      <input matInput placeholder="Eye Color" [(ngModel)]="character.eyeColor" name="eyeColor"/>
+    </mat-form-field>
+    <mat-form-field class="input-group input-item">
+      <input matInput placeholder="Skin" [(ngModel)]="character.skin" name="skin"/>
+    </mat-form-field>
+    <mat-form-field class="input-group input-item">
+      <input matInput placeholder="Gender" [(ngModel)]="character.gender" name="gender"/>
+    </mat-form-field>
+    <mat-form-field class="input-group input-item">
+      <input matInput placeholder="Profession" [(ngModel)]="character.profession" name="profession"/>
     </mat-form-field>
   </form>
   <button class="form-button" mat-raised-button color="primary" (click)="create()">Save</button>

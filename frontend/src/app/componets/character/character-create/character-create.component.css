@@ -1,8 +1,17 @@
 .form-style {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
 }
 
 .form-button {
   margin: 1rem;
+}
+
+.input-group {
+  display: inline-block;
+  padding: 1rem;
+}
+
+.input-item {
+  width: 15rem;
 }

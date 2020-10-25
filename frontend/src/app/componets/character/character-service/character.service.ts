@@ -9,7 +9,7 @@ import { catchError, map } from 'rxjs/operators';
   providedIn: 'root',
 })
 export class CharacterService {
-  baseUrl = ' http://localhost:3001/characters';
+  baseUrl = ' http://localhost:3000/characters';
 
   constructor(private snack: MatSnackBar, private http: HttpClient) {}
 
