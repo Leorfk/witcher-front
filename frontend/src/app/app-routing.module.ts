@@ -1,3 +1,4 @@
+import { MonsterCrudComponent } from './views/monster-crud/monster-crud.component';
 import { CharacterCreateComponent } from './componets/character/character-create/character-create.component';
 import { NotFoundComponent } from './views/not-found/not-found.component';
 import { NgModule } from '@angular/core';
@@ -37,6 +38,10 @@ const routes: Routes = [
   {
     path: 'characters/details/:id',
     component: CharacterDetailsComponent
+  },
+  {
+    path: 'monsters',
+    component: MonsterCrudComponent
   },
   {
     path: '**',

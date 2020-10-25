@@ -30,7 +30,9 @@ import { CharacterDeleteComponent } from './componets/character/character-delete
 import { CharacterDetailsComponent } from './componets/character/character-details/character-details.component';
 import { TableComponent } from './componets/util/table/table.component';
 import { FormComponent } from './componets/util/form/form.component';
-import { SimpleInputComponent } from './componets/util/simple-input/simple-input.component';
+import { MonsterCrudComponent } from './views/monster-crud/monster-crud.component';
+import { PocTableComponent } from './componets/util/poc-table/poc-table.component';
+import { BasicInputComponent } from './componets/util/basic-input/basic-input.component';
 
 
 const Material = [
@@ -53,17 +55,22 @@ const Components = [
   NavComponent,
   TableComponent,
   FormComponent,
-  SimpleInputComponent
+  PocTableComponent,
+  BasicInputComponent,
 ];
 
 const Pages = [
   HomeComponent,
+
   CharacterCrudComponent,
   CharacterCreateComponent,
   CharacterViewComponent,
   CharacterUpdateComponent,
   CharacterDeleteComponent,
   CharacterDetailsComponent,
+
+  MonsterCrudComponent,
+  
   NotFoundComponent
 ];
 
@@ -71,7 +78,7 @@ const Pages = [
   declarations: [
     AppComponent,
     Components,
-    Pages
+    Pages,
   ],
   imports: [
     Material,

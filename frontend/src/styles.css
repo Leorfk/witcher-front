@@ -36,3 +36,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   background-color: rgb(177, 2, 2);
   color: wheat;
 }
+
+body {
+  background: rgb(37, 37, 37);
+}

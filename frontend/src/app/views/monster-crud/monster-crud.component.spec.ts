@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SimpleInputComponent } from './simple-input.component';
+import { MonsterCrudComponent } from './monster-crud.component';
 
-describe('SimpleInputComponent', () => {
-  let component: SimpleInputComponent;
-  let fixture: ComponentFixture<SimpleInputComponent>;
+describe('MonsterCrudComponent', () => {
+  let component: MonsterCrudComponent;
+  let fixture: ComponentFixture<MonsterCrudComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SimpleInputComponent ]
+      declarations: [ MonsterCrudComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SimpleInputComponent);
+    fixture = TestBed.createComponent(MonsterCrudComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
